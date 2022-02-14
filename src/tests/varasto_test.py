@@ -68,7 +68,7 @@ class TestVarasto(unittest.TestCase):
 
     def test_negatiivine_otto_on_nolla(self):
         self.varasto = Varasto(5, 5)
-        self.varasto.ota_varastosta(-99999)
+        self.varasto.ota_varastosta(99999)
         self.assertEqual(self.varasto.saldo, 5)
     
     def test_oikea_str(self):
